@@ -27,13 +27,15 @@ Input: Поле введення, яке приймає placeholder, type і onC
 Приклад використання компонентів можна знайти у файлі App.js.
 
 ## Структура проекту
-├── public
-├── src
-│   ├── components
-│   │   ├── Button.jsx
-│   │   ├── Input.jsx
-│   ├── App.js
-│   └── index.js
-├── package.json
-├── README.md
-└── ...
+
+├── public  
+├── src  
+│   ├── components  
+│   │   ├── Button.jsx  
+│   │   ├── Input.jsx  
+│   ├── App.js  
+│   └── index.js  
+├── package.json  
+├── README.md  
+└── ...  
+
