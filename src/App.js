@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Button from './components/Button';
+import Input from './components/Input';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [inputValue, setInputValue] = useState('');
+
+    const handleClick = () => {
+        alert('Button clicked!');
+    };
+
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
+    };
+
+    return (
+        <div>
+            <h1>React Project</h1>
+            <Input
+                type="text"
+                placeholder="Enter something"
+                onChange={handleInputChange}
+            />
+            <Button text="Click me" type="button" onClick={handleClick} />
+            <p>Input value: {inputValue}</p>
+        </div>
+    );
 }
 
 export default App;
