@@ -8,7 +8,7 @@
 
 1. Клонуйте цей репозиторій:
    ```bash
-   git clone https://github.com/ваше_ім'я_користувача/ваш_проект.git
+   git clone https://github.com/Shablovskyi/react_project_hw_26.git
 
 2. Перейдіть у папку з проєктом:
    cd react_project_hw_26
